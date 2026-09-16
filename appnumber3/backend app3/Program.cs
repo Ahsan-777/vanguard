@@ -180,4 +180,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// ---> Yahan yeh naya block add karein <---
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.EnsureCreated(); // Automatically creates tables if they don't exist
+}
+
 app.Run();
