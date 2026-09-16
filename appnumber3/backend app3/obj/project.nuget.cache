@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kOLcE6kyqYY=",
+  "dgSpecHash": "KUJnCftsunI=",
   "success": true,
   "projectFilePath": "/Users/abdullahtouseef/Documents/synctecho/appnumber3/backend app3/backend app3.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "/Users/abdullahtouseef/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.11/microsoft.entityframeworkcore.analyzers.10.0.11.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/microsoft.entityframeworkcore.design/10.0.11/microsoft.entityframeworkcore.design.10.0.11.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.11/microsoft.entityframeworkcore.relational.10.0.11.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/microsoft.extensions.dependencymodel/10.0.11/microsoft.extensions.dependencymodel.10.0.11.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.abstractions/8.19.2/microsoft.identitymodel.abstractions.8.19.2.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.19.2/microsoft.identitymodel.jsonwebtokens.8.19.2.nupkg.sha512",
@@ -32,13 +33,17 @@
     "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.protocols/8.19.2/microsoft.identitymodel.protocols.8.19.2.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/8.19.2/microsoft.identitymodel.protocols.openidconnect.8.19.2.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.tokens/8.19.2/microsoft.identitymodel.tokens.8.19.2.nupkg.sha512",
-    "/Users/abdullahtouseef/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/microsoft.visualstudio.solutionpersistence/1.0.52/microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/mysql.data/26.7.0/mysql.data.26.7.0.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/mysql.entityframeworkcore/10.0.9/mysql.entityframeworkcore.10.0.9.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/questpdf/2026.8.0/questpdf.2026.8.0.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/swashbuckle.aspnetcore/10.2.3/swashbuckle.aspnetcore.10.2.3.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/swashbuckle.aspnetcore.swagger/10.2.3/swashbuckle.aspnetcore.swagger.10.2.3.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.2.3/swashbuckle.aspnetcore.swaggergen.10.2.3.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.2.3/swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/system.composition/9.0.0/system.composition.9.0.0.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/system.composition.attributedmodel/9.0.0/system.composition.attributedmodel.9.0.0.nupkg.sha512",
@@ -53,18 +58,5 @@
     "/Users/abdullahtouseef/.nuget/packages/system.windows.extensions/10.0.8/system.windows.extensions.10.0.8.nupkg.sha512",
     "/Users/abdullahtouseef/.nuget/packages/zstdsharp.port/0.8.8/zstdsharp.port.0.8.8.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "/Users/abdullahtouseef/Documents/synctecho/appnumber3/backend app3/backend app3.csproj",
-      "warningLevel": 1,
-      "filePath": "/Users/abdullahtouseef/Documents/synctecho/appnumber3/backend app3/backend app3.csproj",
-      "libraryId": "Microsoft.OpenApi",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }
