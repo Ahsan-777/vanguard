@@ -6,7 +6,7 @@ import type {
   SparePart,
 } from "../types/Admin";
 
-const API_URL = "http://localhost:5038/api";
+const API_URL = (import.meta as any).env.VITE_API_URL || "http://localhost:5038/api";
 
 const getToken = (): string => {
   return localStorage.getItem("token") || "";
