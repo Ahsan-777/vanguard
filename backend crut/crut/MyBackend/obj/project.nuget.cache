@@ -1,0 +1,49 @@
+{
+  "version": 2,
+  "dgSpecHash": "RN2Q/KasA6g=",
+  "success": true,
+  "projectFilePath": "/Users/abdullahtouseef/Documents/synctecho/backend crut/crut/MyBackend/MyBackend.csproj",
+  "expectedPackageFiles": [
+    "/Users/abdullahtouseef/.nuget/packages/bouncycastle.cryptography/2.6.2/bouncycastle.cryptography.2.6.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/google.protobuf/3.35.0/google.protobuf.3.35.0.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/k4os.compression.lz4/1.3.8/k4os.compression.lz4.1.3.8.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/k4os.compression.lz4.streams/1.3.8/k4os.compression.lz4.streams.1.3.8.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/k4os.hash.xxhash/1.0.8/k4os.hash.xxhash.1.0.8.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/10.0.11/microsoft.aspnetcore.authentication.jwtbearer.10.0.11.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.aspnetcore.openapi/10.0.10/microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.bcl.cryptography/10.0.2/microsoft.bcl.cryptography.10.0.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.entityframeworkcore/10.0.9/microsoft.entityframeworkcore.10.0.9.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.entityframeworkcore.abstractions/10.0.9/microsoft.entityframeworkcore.abstractions.10.0.9.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.9/microsoft.entityframeworkcore.analyzers.10.0.9.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.9/microsoft.entityframeworkcore.relational.10.0.9.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.abstractions/8.19.2/microsoft.identitymodel.abstractions.8.19.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.19.2/microsoft.identitymodel.jsonwebtokens.8.19.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.logging/8.19.2/microsoft.identitymodel.logging.8.19.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.protocols/8.19.2/microsoft.identitymodel.protocols.8.19.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/8.19.2/microsoft.identitymodel.protocols.openidconnect.8.19.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.identitymodel.tokens/8.19.2/microsoft.identitymodel.tokens.8.19.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/mysql.data/26.7.0/mysql.data.26.7.0.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/mysql.entityframeworkcore/10.0.9/mysql.entityframeworkcore.10.0.9.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/system.configuration.configurationmanager/10.0.8/system.configuration.configurationmanager.10.0.8.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/system.identitymodel.tokens.jwt/8.19.2/system.identitymodel.tokens.jwt.8.19.2.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/system.security.cryptography.protecteddata/10.0.8/system.security.cryptography.protecteddata.10.0.8.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/system.security.permissions/10.0.8/system.security.permissions.10.0.8.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/system.windows.extensions/10.0.8/system.windows.extensions.10.0.8.nupkg.sha512",
+    "/Users/abdullahtouseef/.nuget/packages/zstdsharp.port/0.8.8/zstdsharp.port.0.8.8.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "/Users/abdullahtouseef/Documents/synctecho/backend crut/crut/MyBackend/MyBackend.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/abdullahtouseef/Documents/synctecho/backend crut/crut/MyBackend/MyBackend.csproj",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
