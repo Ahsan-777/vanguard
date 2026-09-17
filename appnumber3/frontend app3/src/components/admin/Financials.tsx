@@ -299,7 +299,7 @@ function Financials({
         </p>
         </div>
          <button
-            onClick={() => window.open(`${API_BASE_URL}/accounts/report/view`, "_blank")}
+            onClick={() => window.open(`${API_BASE_URL}/accounts/report/Carview`, "_blank")}
             className="px-3 py-1 ml-18 h-[50px] bg-emerald-600 hover:bg-emerald-500 text-xs font-semibold text-white border border-emerald-500 rounded-xl transition cursor-pointer flex items-center gap-1.5"
 
           >

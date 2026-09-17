@@ -167,7 +167,7 @@ namespace backend_app3.Controllers
         }
 
         // GET: api/cars/report/view
-        [HttpGet("report/view")]
+        [HttpGet("report/Carview")]
         public async Task<IActionResult> ViewCarInventoryReport()
         {
             try

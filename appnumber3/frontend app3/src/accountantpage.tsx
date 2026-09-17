@@ -177,7 +177,7 @@ function AccountantPage() {
           </div>
           <div>
             <button
-              onClick={() => window.open(`${API_URL}/accounts/report/view`, "_blank")}
+              onClick={() => window.open(`${API_URL}/accounts/report/Carview`, "_blank")}
               className="sm:px-4 sm:py-2 py-1.5 px-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-orange-400 font-semibold text-sm rounded-xl transition cursor-pointer"
             >
               <span className="block sm:hidden">📊 Report</span>

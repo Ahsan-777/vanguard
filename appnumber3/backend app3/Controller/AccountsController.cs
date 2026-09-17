@@ -18,8 +18,7 @@ namespace backend_app3.Controllers
         {
             _context = context;
         }
-
-        [HttpGet("report/view")] // Resolves to /api/accounts/report/view
+        [HttpGet("report/Carview")] // Resolves to /api/accounts/report/view
         public async Task<IActionResult> ViewFullAccountsReport()
         {
             try

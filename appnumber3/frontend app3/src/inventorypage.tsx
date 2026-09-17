@@ -570,14 +570,14 @@ function InventoryPage() {
             )}
   {activeTab === "cars" ? (
               <button
-              onClick={() => window.open(`${API_BASE_URL}/cars/report/view`, "_blank")}
+              onClick={() => window.open(`${API_BASE_URL}/cars/report/Carview`, "_blank")}
                 className="sm:py-3 py-2 sm:px-6 bg-amber-600 hover:bg-amber-500 text-sm sm:text-lg  text-white font-semibold rounded-xl shadow-lg shadow-amber-600/30 transition cursor-pointer"
               >
                 View Cars Report
               </button>
             ) : (           
 <button
-  onClick={() => window.open(`${API_BASE_URL}/spareparts/report/view`, "_blank")}
+  onClick={() => window.open(`${API_BASE_URL}/spareparts/report/Carview`, "_blank")}
   className="sm:py-3 py-1 sm:px-6 bg-amber-600 hover:bg-amber-500 ext-sm sm:text-lg text-white font-semibold rounded-xl shadow-lg shadow-amber-600/30 transition cursor-pointer"
   >
    View Parts Report

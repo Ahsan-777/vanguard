@@ -185,7 +185,7 @@ public async Task<IActionResult> BuyPart(int id, [FromBody] BuySparePartDto? dto
             }
         }
         // GET: api/spareparts/report/view
-[HttpGet("report/view")]
+[HttpGet("report/Carview")]
 public async Task<IActionResult> ViewInventoryReport()
 {
     try
