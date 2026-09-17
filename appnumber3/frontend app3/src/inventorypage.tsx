@@ -1308,305 +1308,310 @@ function InventoryPage() {
       ===================================================== */}
 
       {showAddModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div 
+    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+    onClick={() => setShowAddModal(false)}
+  >
 
-          <div className="relative z-10 w-full max-w-md bg-slate-900 border border-slate-700/80 rounded-2xl p-6 shadow-2xl text-left space-y-4 max-h-[90vh] overflow-y-auto">
+    <div 
+      className="relative z-10 w-full max-w-md bg-slate-900 border border-slate-700/80 rounded-2xl p-6 shadow-2xl text-left space-y-4 max-h-[90vh] overflow-y-auto"
+      onClick={(e) => e.stopPropagation()}
+    >
 
-            <div className="flex justify-between items-center border-b border-slate-700/60 pb-3">
+      <div className="flex justify-between items-center border-b border-slate-700/60 pb-3">
 
-              <h3 className="text-xl font-bold text-white">
-                Add New Vehicle
-              </h3>
+        <h3 className="text-xl font-bold text-white">
+          Add New Vehicle
+        </h3>
 
-              <button
-                onClick={() =>
-                  setShowAddModal(false)
-                }
-                className="text-slate-400 hover:text-white text-xl font-bold cursor-pointer"
-              >
-                ✕
-              </button>
+        <button
+          onClick={() =>
+            setShowAddModal(false)
+          }
+          className="text-slate-400 hover:text-white text-xl font-bold cursor-pointer"
+        >
+          ✕
+        </button>
 
-            </div>
+      </div>
 
-            <form
-              onSubmit={handleAddCar}
-              className="space-y-3"
-            >
+      <form
+        onSubmit={handleAddCar}
+        className="space-y-3"
+      >
 
-              <input
-                type="text"
-                placeholder="Make (e.g. BMW)"
-                required
-                value={formData.make}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    make: e.target.value,
-                  })
-                }
-                className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-              />
+        <input
+          type="text"
+          placeholder="Make (e.g. BMW)"
+          required
+          value={formData.make}
+          onChange={(e) =>
+            setFormData({
+              ...formData,
+              make: e.target.value,
+            })
+          }
+          className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+        />
 
-              <input
-                type="text"
-                placeholder="Model (e.g. M4)"
-                required
-                value={formData.model}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    model: e.target.value,
-                  })
-                }
-                className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-              />
+        <input
+          type="text"
+          placeholder="Model (e.g. M4)"
+          required
+          value={formData.model}
+          onChange={(e) =>
+            setFormData({
+              ...formData,
+              model: e.target.value,
+            })
+          }
+          className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+        />
 
-              <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-2">
 
-                <input
-                  type="number"
-                  placeholder="Year"
-                  required
-                  value={formData.year}
-                  onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      year: e.target.value,
-                    })
-                  }
-                  className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-                />
+          <input
+            type="number"
+            placeholder="Year"
+            required
+            value={formData.year}
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                year: e.target.value,
+              })
+            }
+            className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+          />
 
-                <input
-                  type="number"
-                  placeholder="Price ($)"
-                  required
-                  value={formData.price}
-                  onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      price: e.target.value,
-                    })
-                  }
-                  className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-                />
+          <input
+            type="number"
+            placeholder="Price ($)"
+            required
+            value={formData.price}
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                price: e.target.value,
+              })
+            }
+            className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+          />
 
-              </div>
+        </div>
 
-              <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-2">
 
-                <input
-                  type="number"
-                  placeholder="Mileage"
-                  required
-                  value={formData.mileage}
-                  onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      mileage: e.target.value,
-                    })
-                  }
-                  className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-                />
+          <input
+            type="number"
+            placeholder="Mileage"
+            required
+            value={formData.mileage}
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                mileage: e.target.value,
+              })
+            }
+            className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+          />
 
-                <input
-                  type="text"
-                  placeholder="Color"
-                  required
-                  value={formData.color}
-                  onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      color: e.target.value,
-                    })
-                  }
-                  className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-                />
+          <input
+            type="text"
+            placeholder="Color"
+            required
+            value={formData.color}
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                color: e.target.value,
+              })
+            }
+            className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+          />
 
-              </div>
+        </div>
 
-              <input
-                type="text"
-                placeholder="Engine Size (e.g. 3.0L)"
-                required
-                value={formData.engineSize}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    engineSize: e.target.value,
-                  })
-                }
-                className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-              />
+        <input
+          type="text"
+          placeholder="Engine Size (e.g. 3.0L)"
+          required
+          value={formData.engineSize}
+          onChange={(e) =>
+            setFormData({
+              ...formData,
+              engineSize: e.target.value,
+            })
+          }
+          className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+        />
 
-              {/* TRANSMISSION */}
+        {/* TRANSMISSION */}
 
-              <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1">
 
-                <label className="text-xs font-semibold text-slate-400">
-                  Transmission
-                </label>
+          <label className="text-xs font-semibold text-slate-400">
+            Transmission
+          </label>
 
-                <select
-                  value={
-                    formData.transmission
-                  }
-                  onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      transmission:
-                        e.target.value,
-                    })
-                  }
-                  className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-                >
-                  <option value="Automatic">
-                    Automatic
-                  </option>
+          <select
+            value={
+              formData.transmission
+            }
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                transmission:
+                  e.target.value,
+              })
+            }
+            className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+          >
+            <option value="Automatic">
+              Automatic
+            </option>
 
-                  <option value="Manual">
-                    Manual
-                  </option>
+            <option value="Manual">
+              Manual
+            </option>
 
-                  <option value="Dual-Clutch">
-                    Dual-Clutch
-                  </option>
-                </select>
+            <option value="Dual-Clutch">
+              Dual-Clutch
+            </option>
+          </select>
 
-              </div>
+        </div>
 
-              {/* CAR TYPE */}
+        {/* CAR TYPE */}
 
-              <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1">
 
-                <label className="text-xs font-semibold text-slate-400">
-                  Car Type
-                </label>
+          <label className="text-xs font-semibold text-slate-400">
+            Car Type
+          </label>
 
-                <select
-                  value={formData.type}
-                  onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      type: e.target.value,
-                    })
-                  }
-                  className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-                >
-                  <option value="Sedan">
-                    Sedan
-                  </option>
+          <select
+            value={formData.type}
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                type: e.target.value,
+              })
+            }
+            className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+          >
+            <option value="Sedan">
+              Sedan
+            </option>
 
-                  <option value="SUV">
-                    SUV
-                  </option>
+            <option value="SUV">
+              SUV
+            </option>
 
-                  <option value="Crossover SUV">
-                    Crossover SUV
-                  </option>
+            <option value="Crossover SUV">
+              Crossover SUV
+            </option>
 
-                  <option value="Van">
-                    Van
-                  </option>
+            <option value="Van">
+              Van
+            </option>
 
-                  <option value="Hatchback">
-                    Hatchback
-                  </option>
+            <option value="Hatchback">
+              Hatchback
+            </option>
 
-                  <option value="Coupe">
-                    Coupe
-                  </option>
+            <option value="Coupe">
+              Coupe
+            </option>
 
-                  <option value="Truck">
-                    Truck
-                  </option>
-                </select>
+            <option value="Truck">
+              Truck
+            </option>
+          </select>
 
-              </div>
+        </div>
 
-              {/* CONDITION */}
+        {/* CONDITION */}
 
-              <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1">
 
-                <label className="text-xs font-semibold text-slate-400">
-                  Condition
-                </label>
+          <label className="text-xs font-semibold text-slate-400">
+            Condition
+          </label>
 
-                <select
-                  value={
-                    formData.condition
-                  }
-                  onChange={(e) =>
-                    setFormData({
-                      ...formData,
-                      condition:
-                        e.target.value,
-                    })
-                  }
-                  className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
-                >
-                  <option value="Used">
-                    Used / Pre-Owned
-                  </option>
+          <select
+            value={
+              formData.condition
+            }
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                condition:
+                  e.target.value,
+              })
+            }
+            className="w-full p-3 bg-slate-800 border border-slate-700 rounded-xl text-white outline-none focus:border-amber-500 text-sm"
+          >
+            <option value="Used">
+              Used / Pre-Owned
+            </option>
 
-                  <option value="New">
-                    Brand New
-                  </option>
-                </select>
+            <option value="New">
+              Brand New
+            </option>
+          </select>
 
-              </div>
+        </div>
 
-              {/* IMAGE */}
+        {/* IMAGE */}
 
-              <div className="space-y-2">
+        <div className="space-y-2">
 
-                <label className="block text-xs font-semibold text-slate-400">
-                  Upload Vehicle Image
-                </label>
+          <label className="block text-xs font-semibold text-slate-400">
+            Upload Vehicle Image
+          </label>
 
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={
-                    handleImageUpload
-                  }
-                  className="w-full text-sm text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-amber-600 file:text-white hover:file:bg-amber-500 cursor-pointer bg-slate-800 border border-slate-700 rounded-xl p-2"
-                />
+          <input
+            type="file"
+            accept="image/*"
+            onChange={
+              handleImageUpload
+            }
+            className="w-full text-sm text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-amber-600 file:text-white hover:file:bg-amber-500 cursor-pointer bg-slate-800 border border-slate-700 rounded-xl p-2"
+          />
 
-              </div>
+        </div>
 
-              {/* IMAGE PREVIEW */}
+        {/* IMAGE PREVIEW */}
 
-              {formData.imageUrl && (
-                <div className="mt-3">
+        {formData.imageUrl && (
+          <div className="mt-3">
 
-                  <p className="text-xs text-slate-400 mb-1">
-                    Preview:
-                  </p>
+            <p className="text-xs text-slate-400 mb-1">
+              Preview:
+            </p>
 
-                  <img
-                    src={formData.imageUrl}
-                    alt="Selected Vehicle Preview"
-                    className="w-full h-40 object-cover rounded-xl border border-slate-700"
-                  />
-
-                </div>
-              )}
-
-              <button
-                type="submit"
-                className="w-full py-3 bg-amber-600 hover:bg-amber-500 text-white font-semibold rounded-xl shadow-lg shadow-amber-600/30 transition cursor-pointer mt-4"
-              >
-                Save Vehicle
-              </button>
-
-            </form>
+            <img
+              src={formData.imageUrl}
+              alt="Selected Vehicle Preview"
+              className="w-full h-40 object-cover rounded-xl border border-slate-700"
+            />
 
           </div>
-        </div>
-      )}
+        )}
 
+        <button
+          type="submit"
+          className="w-full py-3 bg-amber-600 hover:bg-amber-500 text-white font-semibold rounded-xl shadow-lg shadow-amber-600/30 transition cursor-pointer mt-4"
+        >
+          Save Vehicle
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+)}
       {/* =====================================================
           ADD SPARE PART MODAL
       ===================================================== */}
