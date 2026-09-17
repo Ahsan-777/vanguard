@@ -1,0 +1,32 @@
+name: Frontend CI Build Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+        working-directory: "appnumber3/frontend app3"
+
+      - name: Run Code Quality Check
+        run: npm run lint
+        working-directory: "appnumber3/frontend app3"
+
+      - name: Run Build Check
+        run: npm run build
+        working-directory: "appnumber3/frontend app3"
