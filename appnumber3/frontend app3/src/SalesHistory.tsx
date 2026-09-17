@@ -55,7 +55,7 @@ const SalesHistory: React.FC = () => {
                 <th className="p-4">Quantity</th>
                 <th className="p-4">Total Amount</th>
                 <th className="p-4">Customer Name</th>
-                <th className="p-4">Phone</th>
+                <th className="p-4">Phone No</th>
                 <th className="p-4">Sale Date</th>
               </tr>
             </thead>
