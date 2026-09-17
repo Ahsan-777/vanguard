@@ -177,7 +177,7 @@ function InventoryPage() {
   const fetchCars = (): void => {
     setLoading(true);
 
-    fetch("http://localhost:5038/api/cars")
+    fetch(`${API_BASE_URL}/cars`)
       .then((res) => res.json())
       .then((data: Car[]) => {
         if (Array.isArray(data)) {
@@ -570,14 +570,14 @@ function InventoryPage() {
             )}
   {activeTab === "cars" ? (
               <button
-               onClick={() => window.open("http://localhost:5038/api/cars/report/view", "_blank")}
+              onClick={() => window.open(`${API_BASE_URL}/cars/report/view`, "_blank")}
                 className="sm:py-3 py-2 sm:px-6 bg-amber-600 hover:bg-amber-500 text-sm sm:text-lg  text-white font-semibold rounded-xl shadow-lg shadow-amber-600/30 transition cursor-pointer"
               >
                 View Cars Report
               </button>
             ) : (           
 <button
-  onClick={() => window.open("http://localhost:5038/api/spareparts/report/view", "_blank")}
+  onClick={() => window.open(`${API_BASE_URL}/spareparts/report/view`, "_blank")}
   className="sm:py-3 py-1 sm:px-6 bg-amber-600 hover:bg-amber-500 ext-sm sm:text-lg text-white font-semibold rounded-xl shadow-lg shadow-amber-600/30 transition cursor-pointer"
   >
    View Parts Report
