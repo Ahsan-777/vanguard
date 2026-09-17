@@ -21,8 +21,8 @@ jobs:
 
       - name: Restore Dependencies
         run: dotnet restore
-        working-directory: "appnumber3"  # Apne backend folder ka exact path yahan check kar lena
+        working-directory: "appnumber3/backend app3"  # Apne backend folder ka exact path yahan check kar lena
 
       - name: Build and Check Code Quality
         run: dotnet build --no-restore
-        working-directory: "appnumber3"  # Apne backend folder ka exact path yahan check kar lena
+        working-directory: "appnumber3/backend app3"  # Apne backend folder ka exact path yahan check kar lena
