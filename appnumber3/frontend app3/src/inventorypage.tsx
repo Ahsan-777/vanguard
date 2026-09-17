@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-
+const API_BASE_URL = 
+  (import.meta as any).env.VITE_API_URL || "http://localhost:5038/api";
 // =====================================================
 // TYPES
 // =====================================================
@@ -201,7 +202,7 @@ function InventoryPage() {
     setPartsLoading(true);
 
     fetch(
-      `http://localhost:5038/api/spareparts?query=${encodeURIComponent(
+     `${API_BASE_URL}/spareparts?query=${encodeURIComponent(
         query
       )}`
     )
@@ -303,7 +304,7 @@ function InventoryPage() {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await fetch("http://localhost:5038/api/cars", {
+      const response = await fetch(`${API_BASE_URL}/cars`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -356,7 +357,7 @@ function InventoryPage() {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await fetch("http://localhost:5038/api/spareparts", {
+      const response = await fetch(`${API_BASE_URL}/spareparts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
