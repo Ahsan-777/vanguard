@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/abdullahtouseef/Documents/synctecho/appnumber3/backend app3/backend app3.csproj": {}
+    "/Users/AhsanMurtaza/Documents/synctecho/appnumber3/backend app3/backend app3.csproj": {}
   },
   "projects": {
-    "/Users/abdullahtouseef/Documents/synctecho/appnumber3/backend app3/backend app3.csproj": {
+    "/Users/AhsanMurtaza/Documents/synctecho/appnumber3/backend app3/backend app3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abdullahtouseef/Documents/synctecho/appnumber3/backend app3/backend app3.csproj",
+        "projectUniqueName": "/Users/AhsanMurtaza/Documents/synctecho/appnumber3/backend app3/backend app3.csproj",
         "projectName": "backend app3",
-        "projectPath": "/Users/abdullahtouseef/Documents/synctecho/appnumber3/backend app3/backend app3.csproj",
-        "packagesPath": "/Users/abdullahtouseef/.nuget/packages/",
-        "outputPath": "/Users/abdullahtouseef/Documents/synctecho/appnumber3/backend app3/obj/",
+        "projectPath": "/Users/AhsanMurtaza/Documents/synctecho/appnumber3/backend app3/backend app3.csproj",
+        "packagesPath": "/Users/AhsanMurtaza/.nuget/packages/",
+        "outputPath": "/Users/AhsanMurtaza/Documents/synctecho/appnumber3/backend app3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/abdullahtouseef/.nuget/NuGet/NuGet.Config"
+          "/Users/AhsanMurtaza/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -46,6 +46,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[10.0.11, )"
